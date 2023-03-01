@@ -12,13 +12,14 @@ create table site_monthly_visits
 		year INT;	
 		month INT;	
 		visits FLOAT()
-		)
-	;
+	);
 --------------------------------------------
 -- 2.Insert values into table:
 
 insert into site_monthly_visits
 values (site, country, year, month, visits);
+
+-- edit CSV file in SubLime (Shift+ctrl+L)
 
 ---------------------------------------------
 -- 3. SQL query:
