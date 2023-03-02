@@ -8,5 +8,5 @@
 - Dashboard on Tableau Public: [HERE](https://public.tableau.com/app/profile/oksana4574/viz/QoQchangeratiotablechart/Dashboard1)
 [![tbl](/visuals/image.png)](https://public.tableau.com/app/profile/oksana4574/viz/QoQchangeratiotablechart/Dashboard1)
 
-### Project 1. Quarter on Quarter Difference 
+### Project 2.  
 **Tableau**
