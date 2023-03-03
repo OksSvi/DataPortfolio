@@ -10,23 +10,31 @@ hp.com,840,16,6,9181335.311
 hp.com,276,16,12,1101527.302
 hp.com,826,16,6,1490687.994
 hp.com,643,16,6,944116.0803
+...........................
 
 --------------------------------------------
 -- 1.Create table site_monthly_visits:
 
 create table site_monthly_visits
 	(
-		site VARCHAR(20);	
-		country	INT;
-		year INT;	
-		month INT;	
-		visits FLOAT()
+		site VARCHAR(30),	
+		country	INT,
+		year INT,	
+		month INT,	
+		visits FLOAT
 	);
 --------------------------------------------
 -- 2.Insert values into table (format CSV file in SubLime (Shift+ctrl+L)):
 
 insert into site_monthly_visits
-values (site, country, year, month, visits);
+(site, country, year, month, visits)
+values 
+('hp.com','276','16','6','1247095.327'),
+('hp.com','840','16','6','9181335.311'),
+('hp.com','276','16','12','1101527.302'),
+('hp.com','826','16','6','1490687.994'),
+('hp.com','643','16','6','944116.0803'),
+.......................................;
 
 ---------------------------------------------
 -- 3. SQL query:
