@@ -3,7 +3,7 @@
 ### Project 1. Quarter on Quarter Difference 
 **SQL & Tableau**
 
-- SQL Script + task description: [HERE](https://github.com/OksSvi/DataPortfolio/blob/main/test_task.sql)
+- SQL Script + task description: [HERE](/P1_SQL_script.sql)
 
 - Dashboard on Tableau Public: [DASHBOARD](https://public.tableau.com/app/profile/oksana4574/viz/QoQchangeratiotablechart/Dashboard1)
 - Steps for Dashboard creation
