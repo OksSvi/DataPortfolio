@@ -1,3 +1,16 @@
+-- Identify the top 10 sites per country, ordered by QoQ (Quarter over Quarter) positive change of visits, including showing the following columns:
+-- Site, Country, Last Quarter, Current Quarter, QoQ Change Ratio
+-- QoQ positive change of visits means that the site's visits have increased between the last quarter and the current quarter.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+0. Test Data Preview(5)
+   site,country,year,month,visits
+   hp.com,276,16,6,1247095.327
+   hp.com,840,16,6,9181335.311
+   hp.com,276,16,12,1101527.302
+   hp.com,826,16,6,1490687.994
+   hp.com,643,16,6,944116.0803
+
 1. Create Date Field since we have Month and Year in 2 separate columns:
 
    - format Month by adding leading zeros: 
@@ -17,4 +30,3 @@
    
 5. Create ranking to show TOP 5 sites in each country:
    RANK([QoQ change ratio]) --> compute using Site
-   
