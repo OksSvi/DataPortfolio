@@ -1,13 +1,19 @@
 1. Create Date Field since we have Month and Year in 2 separate columns:
+
    - format Month by adding leading zeros: 
      Month_00 = <IF [Month]<10 THEN ('0'+ STR([Month])) ELSE STR([Month]) END>
+     
    - create YearMonth date field
      YearMonth = <DATE(DATEPARSE("YYMM", (str([Year])+[Month_00])))>
      
 2. Create calculated field for Current Quarter:
    Current Quarter = <IF QUARTER([YearMonth])=4 THEN [Visits] END>
    
-3. Create calculated field for *Previous Quarter*:
+3. Create calculated field for Previous Quarter:
    Previous Quarter = <IF QUARTER([YearMonth])=3 THEN [Visits] END>
    
-4. Create calculation for QoQ difference:
+4. Create calculated field for QoQ change ratio:
+   QoQ change ratio = <SUM([Current Quarter 1])-SUM([Previous Quarter 1])>
+   
+5. Create ranking to show TOP 5 sites in each country:
+   RANK([QoQ change ratio]) --> compute using Site
