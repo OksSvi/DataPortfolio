@@ -1,4 +1,4 @@
--- Identify the top 10 sites per country, ordered by QoQ (Quarter over Quarter) positive change of visits, including showing the following columns:
+-- Identify the top 5 sites per country, ordered by QoQ (Quarter over Quarter) positive change of visits, including showing the following columns:
 -- Site, Country, Last Quarter, Current Quarter, QoQ Change Ratio
 -- QoQ positive change of visits means that the site's visits have increased between the last quarter and the current quarter.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
