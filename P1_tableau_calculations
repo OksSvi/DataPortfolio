@@ -1,1 +1,2 @@
-dfvds
+1. Create Date Field since we have Month and Year in 2 separate columns:
+   - format Month by adding leading zeros: if [Month]<10 then ('0'+ str([Month])) else str([Month]) end
