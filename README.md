@@ -11,3 +11,5 @@
 
 ### Project 2.  
 **Tableau**
+- Project description [HERE](/P2_description)
+- Dashboard on Tableau Public: [DASHBOARD]
