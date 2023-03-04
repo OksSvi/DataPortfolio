@@ -12,4 +12,4 @@
 ### Project 2.  
 **Tableau**
 - Project description [HERE](/P2_description)
-- Dashboard on Tableau Public: [DASHBOARD]
+- Dashboard on Tableau Public: [DASHBOARD](https://public.tableau.com/app/profile/oksana4574/viz/CustomregionsNewExpansionanalysis/Dashboard1)
