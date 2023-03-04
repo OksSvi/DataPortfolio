@@ -13,5 +13,4 @@
 **Tableau**
 - Project description [HERE](/P2_description)
 - Dashboard on Tableau Public: [DASHBOARD](https://public.tableau.com/app/profile/oksana4574/viz/CustomregionsNewExpansionanalysis/Dashboard1)
-[![tbl](/visuals/image.png)](https://public.tableau.com/app/profile/oksana4574/viz/CustomregionsNewExpansionanalysis/Dashboard1)
-visuals/QoQ change ratio.png
+[![tbl](/visuals/Custom_Regions_and_New_Expansion.png)](https://public.tableau.com/app/profile/oksana4574/viz/CustomregionsNewExpansionanalysis/Dashboard1)
