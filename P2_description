@@ -1,0 +1,16 @@
+The company's strategy is to build a vast network in the smaller cities.
+Already had a strong presence in 140 locations and recently opened stores in ten new cities.
+Additionally, the company has two separate sales regions.
+
+Task 1
+Identify which of the two sales regions is performing better, i.e. outperforms the other
+in two of the three metrics.
+
+Task 2
+Identify which of the ten new locations have the best potential for the company to invest more funds into marketing.
+
+1. Create 2 region groups using Group Method. Calculate ROMI
+2. Highlight New Expansion
+3. Add new DataSource contatining Cities Population for more refined analysis (create inner join using State and City)
+4. Add Clusters based on Revenue, Marketing Spend and Population
+5. Add trendlines for each of Clusters
