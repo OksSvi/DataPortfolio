@@ -22,11 +22,11 @@
 2. Create calculated field for Current Quarter:
    Current Quarter = <IF QUARTER([YearMonth])=4 THEN [Visits] END>
    
-3. Create calculated field for Previous Quarter:
-   Previous Quarter = <IF QUARTER([YearMonth])=3 THEN [Visits] END>
+3. Create calculated field for Previous Quarter, use ZN() to include sites that didn't have visits in previous quarter:
+   Previous Quarter = <IF QUARTER([YearMonth])=3 THEN ZN([Visits]) END>
    
 4. Create calculated field for QoQ change ratio:
-   QoQ change ratio = <SUM([Current Quarter 1])-SUM([Previous Quarter 1])>
+   QoQ change ratio = <SUM([Current Quarter])-SUM([Previous Quarter])>
    
 5. Create ranking to show TOP 5 sites in each country:
    RANK([QoQ change ratio]) --> compute using Site
