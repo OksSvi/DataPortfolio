@@ -19,11 +19,11 @@
    - create YearMonth date field
      YearMonth = <DATE(DATEPARSE("YYMM", (str([Year])+[Month_00])))>
      
-2. Create calculated field for Current Quarter:
-   Current Quarter = <IF QUARTER([YearMonth])=4 THEN [Visits] END>
+2. Create calculated field for Current (Latest) Quarter:
+   Current Quarter = <IF QUARTER([YearMonth])={MAX(QUARTER([YearMonth]))} THEN [Visits] ELSE 0 END
    
-3. Create calculated field for Previous Quarter, use ZN() to include sites that didn't have visits in previous quarter:
-   Previous Quarter = <IF QUARTER([YearMonth])=3 THEN ZN([Visits]) END>
+3. Create calculated field for Previous Quarter:
+   Previous Quarter = <IF QUARTER([YearMonth])=({MAX(QUARTER([YearMonth]))}-1) THEN [Visits] else 0 END>
    
 4. Create calculated field for QoQ change ratio:
    QoQ change ratio = <SUM([Current Quarter])-SUM([Previous Quarter])>
